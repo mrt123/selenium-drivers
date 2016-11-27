@@ -4,6 +4,6 @@
   "dependencies": {
     "adm-zip": "^0.4.7",
     "request": "^2.79.0",
-    "request-progress": "^2.0.1
+    "request-progress": "^2.0.1"
   }
 }

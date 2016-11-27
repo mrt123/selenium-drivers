@@ -1,11 +1,22 @@
 var path = require('path');
 var pathToBinary = path.join(__dirname);
 
-exportPath(pathToBinary);
+
+
+var seleniumDriverCore = require('./lib/selenium-drivers.js');
+
+module.exports = {
+    download: seleniumDriverCore.prepareFile,
+    run: run
+};
 
 var fileReference = getFileReference(pathToBinary);
 
-exports.defaultInstance = require('child_process').execFile(fileReference);
+function run() {
+    exportPath(pathToBinary);
+    console.log('running browser driver...');
+    exports.defaultInstance = require('child_process').execFile(fileReference);
+}
 
 function exportPath(pathToExport) {
     process.env.PATH += path.delimiter + pathToExport;
