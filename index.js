@@ -1,5 +1,6 @@
 var path = require('path');
 var pathToBinary = path.join(__dirname);
+console.log(pathToBinary)
 
 
 
