@@ -1,18 +1,23 @@
 var seleniumDrivers = require('./lib/selenium-drivers');
 
-seleniumDrivers.run('chrome').then(function () {
+seleniumDrivers.init({
     
-    var webdriver = require('selenium-webdriver'),
-        until = webdriver.until;
+        name: 'chrome',
+        download: false
+    
+    }).then(function () {
 
-    var driver = new webdriver.Builder()
-        .forBrowser('chrome')
-        .build();
+        var webdriver = require('selenium-webdriver'),
+            until = webdriver.until;
 
-    driver.get('http://www.google.com/ncr');
-    driver.wait(until.titleIs('Google'), 1000);
-    driver.quit().then(function () {
-        console.log('Test passed');
+        var driver = new webdriver.Builder()
+            .forBrowser('chrome')
+            .build();
+
+        driver.get('http://www.google.com/ncr');
+        driver.wait(until.titleIs('Google'), 1000);
+        driver.quit().then(function () {
+            console.log('Test passed');
+        });
+
     });
-    
-});
