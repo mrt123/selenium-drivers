@@ -1,7 +1,7 @@
 # selenium-drivers
 
 Nodejs binding for selenium browser drivers. Automates browser driver setup for various operating systems and browsers. 
-Suitable for running with CI.
+Suitable for running locally or with CI.
 
 * Currently works only with WebDriverJs
 * more general programing interface will be introduced later
