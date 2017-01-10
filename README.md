@@ -9,7 +9,7 @@ Suitable for running with CI.
 * supported OS: Windows, OSX, Linux
 
 
-## Recommended Use case:
+## Use case:
 ```javascript
 var browserName = 'chrome';
 
@@ -26,8 +26,11 @@ seleniumDrivers.init({
     
     driver.get('http://www.google.com/ncr');
 ```
-
-
+## Options
+* name : specify browser name 
+* download: disable driver download (enabled by default)
+* deactivate: deactivate library (useful when running with custom browser capabilities where driver is provided, 
+eg: for sauceLabs, or browserStack ).
 
 TODO:
 Options:
