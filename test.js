@@ -7,7 +7,8 @@ var browserName = 'chrome';
 seleniumDrivers.init({
 
     name: browserName,
-    download: true
+    download: true,
+    deactivate: false
 
 }).then(function () {
 
