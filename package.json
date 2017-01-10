@@ -8,6 +8,7 @@
         "request-progress": "^2.0.1"
     },
     "devDependencies": {
-        "selenium-webdriver": "^3.0.1"
+        "selenium-webdriver": "^3.0.1",
+        "tar.gz": "https://github.com/mrt123/node-tar.gz.git"
     }
 }

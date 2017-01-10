@@ -1,23 +1,28 @@
 var seleniumDrivers = require('./lib/selenium-drivers');
 
+var browserName = 'chrome';
+
 seleniumDrivers.init({
-    
-        name: 'chrome',
-        download: false
-    
-    }).then(function () {
 
-        var webdriver = require('selenium-webdriver'),
-            until = webdriver.until;
+    name: browserName,
+    download: true
 
-        var driver = new webdriver.Builder()
-            .forBrowser('chrome')
-            .build();
+}).then(function () {
 
-        driver.get('http://www.google.com/ncr');
-        driver.wait(until.titleIs('Google'), 1000);
-        driver.quit().then(function () {
-            console.log('Test passed');
-        });
+    console.log('Running WebDriver Test ...');
+    var webdriver = require('selenium-webdriver'),
+        until = webdriver.until;
 
+    var driver = new webdriver.Builder()
+        .forBrowser(browserName)
+        .build();
+    //
+    driver.get('http://www.google.com/ncr');
+    driver.wait(until.titleIs('Google'), 1000);
+    driver.quit().then(function () {
+        console.log('Test passed');
     });
+    
+    // TODO: include mocha and run 1 test per browser.
+
+});
