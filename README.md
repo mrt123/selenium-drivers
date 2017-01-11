@@ -9,6 +9,7 @@ browsers and operating systems.
 * supported browsers: Firefox, Chrome, Safari (more to follow)
 * supported OS: Windows, OSX, Linux
 * supported NodeJs: 6.x or above
+* by default uses newest drivers (make sure your browser is also up to date)
 
 ## Use case:
 ```javascript
@@ -36,7 +37,6 @@ eg: for sauceLabs, or browserStack) (default: `false`)
 
 ## Roadmap
 * option to set fixed browser driver version
-* auto check for newest available driver
 * don't download new driver if local driver is up to date
 * option to set fixed browser driver archive url
 * custom url pattern
