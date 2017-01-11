@@ -8,14 +8,17 @@ browsers and operating systems.
 * Suitable for running locally or with CI
 * supported browsers: Firefox, Chrome, Safari (more to follow)
 * supported OS: Windows, OSX, Linux
+* supported NodeJs: 6.x or above
 
 ## Use case:
 ```javascript
 var browserName = 'chrome';
 
 seleniumDrivers.init({
+
     name: browserName,
     download: true
+
 }).then(function () {
 
     var driver = new webDriver.Builder()
@@ -23,11 +26,12 @@ seleniumDrivers.init({
         .build();
 
     driver.get('http://www.google.com/ncr');
+});
 ```
 ## Options
-* `name`: specify browser name
-* `download`: disable driver download (default: `true`)
-* `deactivate`: deactivate library (useful when running with custom browser capabilities where driver is provided,
+* `name`: ('chrome' | 'firefox' | 'safari') specify browser name
+* `download`: (true | false) disable driver download (default: `true`)
+* `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
 
 ## Roadmap
