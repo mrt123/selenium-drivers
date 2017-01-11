@@ -13,24 +13,22 @@ browsers and operating systems.
 
 ## Use case:
 ```javascript
-var browserName = 'chrome';
-
 seleniumDrivers.init({
 
-    name: browserName,
+    browserName: 'chrome',
     download: true
 
 }).then(function () {
 
     var driver = new webDriver.Builder()
-        .forBrowser(browserName)
+        .forBrowser('chrome')
         .build();
 
     driver.get('http://www.google.com/ncr');
 });
 ```
 ## Options
-* `name`: ('chrome' | 'firefox' | 'safari') specify browser name
+* `browserName`: ('chrome' | 'firefox' | 'safari') specify browser name
 * `download`: (true | false) disable driver download (default: `true`)
 * `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
