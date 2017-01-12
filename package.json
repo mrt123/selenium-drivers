@@ -1,7 +1,11 @@
 {
     "name": "selenium-drivers",
-    "version": "0.2.1",
+    "version": "1.0.0",
     "main": "lib/selenium-drivers.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrt123/selenium-drivers.git"
+    },
     "dependencies": {
         "adm-zip": "^0.4.7",
         "request": "^2.79.0",
