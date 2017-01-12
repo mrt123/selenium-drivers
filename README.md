@@ -28,15 +28,24 @@ seleniumDrivers.init({
 });
 ```
 ## Options
-* `browserName`: ('chrome' | 'firefox' | 'safari') specify browser name
+* `browserName`: ('chrome' | 'firefox' | 'internet explorer' | 'safari') specify browser name
 * `download`: (true | false) disable driver download (default: `true`)
 * `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
 
-## Roadmap
-* option to set fixed browser driver version
-* don't download new driver if local driver is up to date
-* option to set fixed browser driver archive url
+## Supported Browsers
+| Browser           | Operating Systems           | 
+| ----------------- |:---------------------------:|
+| Chrome            | macOS_64, Windows7,8,10     | 
+| Firefox           | macOS_64, Windows7,8,10     |   
+| Internet Explorer |     Windows7,8,10           |    
+| Safari            |    macOS >= ElCaptain       |
+
+* Nodejs >= 6.x required on all OS.
+
+## RoadMap
+* option to set custom browser driver version
+* option to set custom browser driver archive url
 * custom url pattern
 * Edge, Opera, PhantomJS support
-* programmatic start/stop feature (for non WebDriverJs usage).
+* programmatic start/stop feature (for non WebDriverJs usage)
