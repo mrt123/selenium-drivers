@@ -2,7 +2,7 @@ var seleniumDrivers = require('./lib/selenium-drivers');
 var webDriver = require('selenium-webdriver'),
     until = webDriver.until;
 
-var browserName = 'chrome';
+var browserName = 'internet explorer';
 
 seleniumDrivers.init({
 
