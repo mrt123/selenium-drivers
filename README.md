@@ -11,6 +11,9 @@ browsers and operating systems.
 
 ## Use case:
 ```javascript
+var webDriver = require('selenium-webdriver');
+var seleniumDrivers = require('selenium-drivers');
+
 seleniumDrivers.init({
 
     browserName: 'chrome',
