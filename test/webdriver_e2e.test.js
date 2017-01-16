@@ -15,8 +15,8 @@ describe('webDriver is able to run browser!', function () {
   it('chrome', function () {
     return assertWebdriverRunsWithBrowser('chrome');
   });
-  
-  
+
+
   function assertWebdriverRunsWithBrowser(browserName) {
     var actualOutcome;
 
@@ -36,6 +36,4 @@ describe('webDriver is able to run browser!', function () {
       }
     });
   }
-  
-  
 });
