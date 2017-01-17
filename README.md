@@ -9,7 +9,7 @@ browsers and operating systems.
 * supported NodeJs: 6.x or above
 * by default uses newest drivers (make sure your browser is also up to date)
 
-Make sure your OS & Browser are [supported!](#Supported-Browsers)
+Make sure your OS & Browser are [supported!](#supported-browsers)
 
 ## Use case:
 ```javascript
