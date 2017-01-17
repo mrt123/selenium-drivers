@@ -2,12 +2,11 @@ var seleniumDrivers = require('../lib/selenium-drivers');
 var webDriver = require('selenium-webdriver');
 var del = require('del');
 
-describe.skip('WebDriver is able to download new drivers & run browser!', function () {
+describe('WebDriver is able to run browser using existing drivers!', function () {
 
-  before('Deleting all local drivers.', function () {
-    return del(['downloads/*', '!downloads/.tmp']);
+  before('TODO: check that locally stored drivers exist.', function () {
   });
-
+  
   it('firefox', function () {
     return assertWebdriverRunsWithBrowser('firefox');
   });

@@ -9,6 +9,8 @@ browsers and operating systems.
 * supported NodeJs: 6.x or above
 * by default uses newest drivers (make sure your browser is also up to date)
 
+Make sure your OS & Browser are [supported!](#Supported-Browsers)
+
 ## Use case:
 ```javascript
 var webDriver = require('selenium-webdriver');
@@ -30,6 +32,7 @@ seleniumDrivers.init({
 ```
 ## Options
 * `browserName`: ('chrome' | 'firefox' | 'internet explorer' | 'safari') specify browser name
+* `silent`: (true | false) set to false for verbose output (default: `true`)
 * `download`: (true | false) disable driver download (default: `true`)
 * `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
