@@ -11,7 +11,7 @@ browsers and operating systems.
 
 Make sure your OS & Browser are [supported!](#supported-browsers)
 
-## Use case:
+## use case
 ```javascript
 var webDriver = require('selenium-webdriver');
 var seleniumDrivers = require('selenium-drivers');
@@ -30,14 +30,14 @@ seleniumDrivers.init({
     driver.get('http://www.google.com/ncr');
 });
 ```
-## Options
+## options
 * `browserName`: ('chrome' | 'firefox' | 'internet explorer' | 'safari') specify browser name
 * `silent`: (true | false) set to false for verbose output (default: `true`)
 * `download`: (true | false) disable driver download (default: `true`)
 * `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
 
-## Supported Browsers
+## supported browsers
 | Browser           | Operating Systems           | 
 | ----------------- |:---------------------------:|
 | Chrome            | macOS_64, Windows7,8,10     | 
