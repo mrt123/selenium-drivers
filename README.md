@@ -4,12 +4,17 @@ Node.js binding for selenium browser drivers.
 Sets up your system environment and keeps drivers up to date for various
 browsers and operating systems.
 
-* Currently works only with WebDriverJs
+
+* Currently works only with **selenium-webdriver** package
 * Suitable for running locally or with CI
 * supported NodeJs: 6.x or above
 * by default uses newest drivers (make sure your browser is also up to date)
 
 Make sure your OS & Browser are [supported!](#supported-browsers)
+
+## installation
+```npm install selenium-webdriver```
+```npm install selenium-drivers```
 
 ## use case
 ```javascript
@@ -33,7 +38,7 @@ seleniumDrivers.init({
 ## options
 * `browserName`: ('chrome' | 'firefox' | 'internet explorer' | 'safari') specify browser name
 * `silent`: (true | false) set to false for verbose output (default: `true`)
-* `download`: (true | false) disable driver download (default: `true`)
+* `download`: (true | false) automatic latest driver download on start (default: `true`)
 * `deactivate`: (true | false) deactivate library (useful when running with custom browser capabilities where driver is provided,
 eg: for sauceLabs, or browserStack) (default: `false`)
 
